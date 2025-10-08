@@ -302,57 +302,64 @@
           <a href="https://www.figma.com/proto/…" target="_blank" style="color:#5ee8fc;text-decoration:underline;">View Project</a>
         </div>
         <div class="project glass-card">
-  <h3>🆕 Todo-List Website</h3>
-  <p>to-do app (totodo) created using lovable ai and supabase</p>
-  <a href="https://totodo.vercel.app" target="_blank" style="color:#5ee8fc;text-decoration:underline;">View Project</a>
-  <a href="https://github.com/Vicky4002/totodo" target="_blank" style="color:#5ee8fc;text-decoration:underline; margin-left: 1em;">Source Code</a>
-</div>
+          <h3>🆕 Todo‑List Website</h3>
+          <p>to-do app (totodo) created using lovable ai and supabase</p>
+          <a href="https://totodo.vercel.app" target="_blank" style="color:#5ee8fc;text-decoration:underline;">View Project</a>
+          <a href="https://github.com/Vicky4002/totodo" target="_blank" style="color:#5ee8fc;text-decoration:underline; margin-left: 1em;">Source Code</a>
+        </div>
+
+        <!-- New project: Cartoon Magic -->
+        <div class="project glass-card">
+          <h3>🎨 Cartoon Magic</h3>
+          <p>An interactive cartoon‑style image transformation web app.</p>
+          <a href="https://cartoonmagic.vercel.app" target="_blank" style="color:#5ee8fc;text-decoration:underline;">View Project</a>
+          <a href="https://github.com/Vicky4002/CARTOON-MAGIC" target="_blank" style="color:#5ee8fc;text-decoration:underline; margin-left: 1em;">Source Code</a>
+          
+        </div>
 
       </div>
     </section>
 
    <!-- Enhanced Get in Touch Section -->
-<section class="contact enhanced-contact">
-  <div class="contact-glass">
-    <div class="contact-header" style="text-align:left; margin-left:1rem; margin-bottom:1.9rem;">
-      <span class="contact-icon">📬</span>
-      <h2 style="display:inline-block; margin-left:.2em; vertical-align:middle;">Let's Connect!</h2>
-      <div class="subtitle" style="margin-left:.1em;">
-        Have an idea? Want to collaborate or chat tech? <br>
-        Drop me a message and I’ll get back within a day.
-      </div>
-    </div>
-    <div class="contact-layout">
-      <form class="contact-form" method="POST" action="https://formspree.io/f/mgvzzovd">
-        <label>Name<input type="text" name="name" required></label>
-        <label>Email<input type="email" name="email" required></label>
-          <label>Mobile<input type="tel" name="mobile" pattern="[0-9]{10}" maxlength="10" ></label>
-        <label>Subject<input type="text" name="subject"></label>
-        <label>Message<textarea name="message" rows="5" required></textarea></label>
-        <button type="submit">Send Message <span class="send-icon">➤</span></button>
-      </form>
-      <div class="contact-info">
-        <h3 style="text-align:left;">Quick Contacts</h3>
-        <p>Email: <a href="mailto:vigneshvicky4002@gmail.com">vigneshvicky4002@gmail.com</a></p>
-        <p>Mobile: <span style="color:#abefff; font-weight:600;">7010959078</span></p>
-        <p>GitHub: <a href="https://github.com/Vicky4002" target="_blank">Vicky4002</a></p>
-        <!-- LinkedIn link is now removed -->
-      </div>
-    </div>
-  </div>
-</section>
+   <section class="contact enhanced-contact">
+     <div class="contact-glass">
+       <div class="contact-header" style="text-align:left; margin-left:1rem; margin-bottom:1.9rem;">
+         <span class="contact-icon">📬</span>
+         <h2 style="display:inline-block; margin-left:.2em; vertical-align:middle;">Let's Connect!</h2>
+         <div class="subtitle" style="margin-left:.1em;">
+           Have an idea? Want to collaborate or chat tech? <br>
+           Drop me a message and I’ll get back within a day.
+         </div>
+       </div>
+       <div class="contact-layout">
+         <form class="contact-form" method="POST" action="https://formspree.io/f/mgvzzovd">
+           <label>Name<input type="text" name="name" required></label>
+           <label>Email<input type="email" name="email" required></label>
+           <label>Mobile<input type="tel" name="mobile" pattern="[0-9]{10}" maxlength="10" ></label>
+           <label>Subject<input type="text" name="subject"></label>
+           <label>Message<textarea name="message" rows="5" required></textarea></label>
+           <button type="submit">Send Message <span class="send-icon">➤</span></button>
+         </form>
+         <div class="contact-info">
+           <h3 style="text-align:left;">Quick Contacts</h3>
+           <p>Email: <a href="mailto:vigneshvicky4002@gmail.com">vigneshvicky4002@gmail.com</a></p>
+           <p>Mobile: <span style="color:#abefff; font-weight:600;">7010959078</span></p>
+           <p>GitHub: <a href="https://github.com/Vicky4002" target="_blank">Vicky4002</a></p>
+         </div>
+       </div>
+     </div>
+   </section>
 
-<!-- Improved footer with colored Privacy Policy -->
-<footer>
-  © 2025 Vicky Portfolio &bull;
-  <a href="#" style="color:#00c6ff; font-weight:600;">Privacy Policy</a>
-  &bull;
-  <a href="#"style="color:#00c6ff; font-weight:600;">Terms of Service</a>
-</footer>
-
+   <!-- Footer -->
+   <footer>
+     © 2025 Vicky Portfolio &bull;
+     <a href="#" style="color:#00c6ff; font-weight:600;">Privacy Policy</a>
+     &bull;
+     <a href="#" style="color:#00c6ff; font-weight:600;">Terms of Service</a>
+   </footer>
 
   </main>
-  
+
 <script>
   // Scroll reveal for projects, enhanced with slight delay
   const observer = new IntersectionObserver(entries => {
@@ -364,6 +371,7 @@
     });
   }, { threshold: 0.25 });
   document.querySelectorAll('.project').forEach((el,i) => setTimeout(() => observer.observe(el), i*110));
+
   // Form handling
   const form = document.querySelector('.contact-form');
   form.addEventListener('submit', async e => {
